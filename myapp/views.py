@@ -34,6 +34,5 @@ def details_delete(request, id):
     return redirect('details_list')
     
 
-    
-
+# hello 
 # Create your views here.
