@@ -1,0 +1,25 @@
+<center>
+<h1> Student Details</h1>
+<table border="1">
+    <tr>
+
+    <th>Name</th>
+    <th>email</th>
+    <th>Actions</th>
+
+</tr>
+{% for i in tabel %}
+
+<tr>
+<td>{{i.name}}</td>
+<td>{{i.email}}</td>
+<td>
+    <a href="{% url 'details_update' i.id %}">update</a>
+    <a href="{% url 'details_delete' i.id %}">delete</a>
+</td>
+
+</tr>
+{% endfor %}
+</table>
+    <a href="{% url 'details_create' %}">BACK</a>
+    </center>
